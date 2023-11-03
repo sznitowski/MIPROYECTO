@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TECNOVICIO </title>
+    <meta name="description" content="TECNOVICIO: Formulario de alta de nuevas Categorias">
+    <meta name="author" content="Valentin Sznitowski">
+    <meta name="robots" content="index">
+    <meta name="robots" content="nofollow">
+    <meta name="theme-color" content="#000000">
+    <link rel="stylesheet" href="../../assets/css/estilos.css">
+</head>
+<body>
+    <div class="box">
+     <header>
+        <div>
+            <nav id="nav-form-categorias" class="nav">
+                <a id="home" href="/assets/views/home.html">
+                    Home
+                </a>
+            </div>
+
+            <div class="nav-item">
+                <a id="home" href="/backend/views/categorias.html">
+                    Alta de categorias
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <img src="../../assets/img">
+        <h1 class="title">Carga de productos</h1>
+
+        <div>
+            <section>
+                <form id="form-carga-categorias" action="" method="post" autocomplete="on">
+                    <div>
+                        <label for="nombre-producto">Nombre</label>
+                        <input type="search" name="nombre-producto" id="nombre-producto" placeholder="EJ: Nombre producto">
+                    </div>
+
+                    <div>
+                        <label for="description-producto">Descripcion</label>
+                        <textarea name="descripcion-producto" id="descripcion-producto" cols="50" rows="10"
+                            placeholder="Ej: Descripcion sarasa sarasa sarasa">
+                        </textarea>
+                    </div>
+
+                    <div>
+                        <label for="precio-producto">Precio $</label>
+                        <input type="number" name="precio-producto" id="precio-producto" placeholder="Ej: 1000">
+                    </div>
+
+                    <div>
+                        <label for="categoria-producto">Categoria</label>
+                        <input type="text" name="categoria-producto" id="categoria-producto">
+                    </div>
+
+                    <div>
+                        <label for="imagen-producto">Imagen</label>
+                        <input type="file" accept="image/*" name="imagen-producto" id="imagen-producto">
+                    </div>
+
+                    <div id="form-producto-botones">
+                        <input id="productos-reset" class="button" type="reset">
+                    </div>
+                </form>
+            </section>
+        </div>
+
+    </main>
+    <footer>
+        
+    </footer>
+</body>
+</html>
