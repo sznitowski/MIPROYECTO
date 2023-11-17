@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,14 +12,15 @@
     <meta name="theme-color" content="#000000">
     <link rel="stylesheet" href="../../assets/css/estilos.css">
 </head>
+
 <body>
     <div class="box">
-     <header>
-        <div>
-            <nav id="nav-form-categorias" class="nav">
-                <a id="home" href="/assets/views/home.html">
-                    Home
-                </a>
+        <header>
+            <div>
+                <nav id="nav-form-categorias" class="nav">
+                    <a id="home" href="/assets/views/home.html">
+                        Home
+                    </a>
             </div>
 
             <div class="nav-item">
@@ -26,53 +28,60 @@
                     Alta de categorias
                 </a>
             </div>
-        </div>
-    </header>
 
-    <main>
-        <img src="../../assets/img">
-        <h1 class="title">Carga de productos</h1>
+        </header>
 
-        <div>
-            <section>
-                <form id="form-carga-categorias" action="" method="post" autocomplete="on">
-                    <div>
-                        <label for="nombre-producto">Nombre</label>
-                        <input type="search" name="nombre-producto" id="nombre-producto" placeholder="EJ: Nombre producto">
-                    </div>
+        <main>
+            <img src="../../assets/img.jpg">
+            <h1 class="title">Carga de productos</h1>
 
-                    <div>
-                        <label for="description-producto">Descripcion</label>
-                        <textarea name="descripcion-producto" id="descripcion-producto" cols="50" rows="10"
-                            placeholder="Ej: Descripcion sarasa sarasa sarasa">
+            <div>
+                <section>
+                    <form id="form-productos" action="" method="post" autocomplete="on">
+                        <div>
+                            <label for="nombre-producto">Nombre</label>
+                            <input type="search" name="nombre-producto" id="nombre-producto"
+                                placeholder="EJ: Nombre producto">
+                        </div>
+                        <div>
+                            <label for="description-producto">Descripcion</label>
+                            <textarea name="descripcion-producto" id="descripcion-producto" cols="50" rows="10"
+                                placeholder="Ej: Descripcion sarasa sarasa sarasa">
                         </textarea>
-                    </div>
+                        </div>
+                        <div>
+                            <label for="precio-producto">Precio $</label>
+                            <input type="number" name="precio-producto" id="precio-producto" placeholder="Ej: 1000">
+                        </div>
+                        <div>
+                            <label for="categoria-producto">Categoria</label>
+                            <input type="text" name="categoria-producto" id="categoria-producto">
+                        </div>
+                        <div>
+                            <label for="imagen-producto">Imagen</label>
+                            <input type="file" accept="image/*" name="imagen-producto" id="imagen-producto">
+                        </div>
+                        <div id="form-producto-botones">
+                            <input id="productos-reset" class="button" type="reset">
+                            <input id="productos-submit" class="button" type="submit">
+                        </div>
+                    </form>
+                </section>
+            </div>
 
-                    <div>
-                        <label for="precio-producto">Precio $</label>
-                        <input type="number" name="precio-producto" id="precio-producto" placeholder="Ej: 1000">
-                    </div>
+        </main>
+        <footer>
 
-                    <div>
-                        <label for="categoria-producto">Categoria</label>
-                        <input type="text" name="categoria-producto" id="categoria-producto">
-                    </div>
+        </footer>
 
-                    <div>
-                        <label for="imagen-producto">Imagen</label>
-                        <input type="file" accept="image/*" name="imagen-producto" id="imagen-producto">
-                    </div>
+    </div>
 
-                    <div id="form-producto-botones">
-                        <input id="productos-reset" class="button" type="reset">
-                    </div>
-                </form>
-            </section>
-        </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="../../assets/js/validaciones.js"></script>
 
-    </main>
-    <footer>
-        
-    </footer>
+    </div>
+    
 </body>
+
 </html>

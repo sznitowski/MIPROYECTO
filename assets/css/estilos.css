@@ -1,23 +1,69 @@
-
-*{
-    margin: 10px;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+/* Resto del código CSS permanece igual */
+header {
+    background-color: lightblue;
+    padding: 10px;
 }
 
-body {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
+footer {
+    background-color: lightblue;
+    padding: 10px;
 }
 
 .box {
     height: 85vh;
     width: 30vw;
-    min-height: 450px;
-    margin-top: 50px;
-    background-color: azure;
-    background-color: aqua;
+    min-height: 700px;
+    margin: 50px auto 0; /* Ajusta el margen para centrar verticalmente y horizontalmente */
+    background: #E6E6FA; /* Cambia el color a una tonalidad más agradable (lavanda) */
     border-radius: 50px;
-    border: solid black;
+    border: 2px solid black;
+}
+
+form {
+    margin: 20px;
+}
+
+input[type="search"] {
+    width: 100%;
+    padding: 8px;
+    margin: 5px 0;
+    box-sizing: border-box;
+}
+
+label {
+    display: block;
+    margin-bottom: 6px;
+}
+
+#form-caterias-botones {
+    margin-top: 20px;
+}
+
+.button {
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Estilos para los botones específicos */
+#categorias-reset {
+    background-color: #ccc;
+}
+
+#categorias-submit {
+    background-color: #4CAF50;
+    color: white;
+}
+
+#categorias-cancelar {
+    background-color: #f44336;
+    color: white;
+}
+
+img {
+    width: 20%;
+    display: flex;
+    justify-content: center;
 }

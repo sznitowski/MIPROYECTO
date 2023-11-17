@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,45 +12,50 @@
     <meta name="theme-color" content="#000000">
     <link rel="stylesheet" href="../../assets/css/estilos.css">
 </head>
+
 <body>
     <div class="box">
-     <header>
-        <div>
-            <nav id="nav-form-categorias" class="nav">
-                <a id="home" href="/assets/views/home.html">
-                    Home
-                </a>
+        <header>
+            <div>
+                <nav id="nav-form-categorias" class="nav">
+                    <a id="home" href="/assets/views/home.html">
+                        Home
+                    </a>
             </div>
-
             <div class="nav-item">
                 <a id="home" href="/backend/views/productos.html">
                     Productos
                 </a>
             </div>
-        </div>
-    </header>
 
-    <main>
-        <img src="../../assets/img">
+        </header>
+        <main>
+            <img src="../../assets/img.jpg">
+            <div class="title">
+                <section>
+                    <form id="form_categorias" method="post" >
+                        <label for="nombre-categoria">Nombre</label>
+                        <input type="text" name="categoria" id="categorias" class="input_text"
+                         placeholder="Ej: Monitores">
 
-        <div class="title">
-            <section>
-                <form id="form-carga-categorias" action="" method="post" autocomplete="on">
-                    <label for="nombre-categoria">Nombre</label>
-                    <input type="search" name="nombre-categoria" id="nombre-categoria" placeholder="Ej: Monitores"
-                    pattern="[a-zA-Z]" required>
+                           <div id="form-caterias-botones"> 
+                            <input id="categorias-reset" class="button" type="reset">
+                            <button id="categorias-cancelar" class="button" type="button">Cancelar</button>
+                            <input id="categorias-submit" class="button" type="submit">
+                            </div>
+                    </form>
+                </section>
+            </div>
+        </main>
+        <footer>
 
-                    <div id="form-caterias-botones">
-                        <input id="categorias-reset" class="button" type="reset">
-                        <button id="categorias-cancelar" class="button" type="button">Cancelar</button>
-                        <input id="categorias-submit" class="button" type="submit">
-                    </div>
-                </form>
-            </section>
-        </div>
-    </main>
-    <footer>
-        
-    </footer>
+        </footer>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="../../assets/js/validaciones.js"></script>
+
 </body>
+
 </html>
